@@ -712,6 +712,26 @@ video {
   gap: 41px;
 }
 
+.gap-\[30px\] {
+  gap: 30px;
+}
+
+.gap-\[60px\] {
+  gap: 60px;
+}
+
+.gap-\[90px\] {
+  gap: 90px;
+}
+
+.gap-\[100px\] {
+  gap: 100px;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
 }
