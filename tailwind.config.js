@@ -11,7 +11,7 @@ module.exports = {
       colors: {
         "primary" : "#96BB7C",
         "second" : "#737373",
-        "text-color" : "#252B42"
+        "title" : "#252B42"
       },
       fontFamily:{
         "montserrat" : ['Montserrat', "sans-serif"]
