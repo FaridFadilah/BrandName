@@ -16,12 +16,12 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-  <nav class="backdrop-blur-[3px] bg-transparent fixed top-0 left-0 right-0 font-bold font-montserrat z-50">
-    <div class="container py-4 flex items-center gap-[41px]">
+<body class="font-montserrat">
+  <nav class="backdrop-blur-[3px] bg-transparent fixed top-0 left-0 right-0 font-bold  z-50">
+    <div class="container py-4 flex justify-between lg:justify-start items-center gap-[41px]">
       <h1 class=" text-2xl">Brandname</h1>
-      <div class="flex items-center gap-[240px]">
-        <ul class="flex gap-4 text-sm text-second drop-shadow-md">
+      <div class="hidden lg:flex items-center gap-[240px]">
+        <ul id="" class=" flex gap-4 text-sm text-second drop-shadow-md">
           <li>Home</li>
           <li>Product</li>
           <li>Pricing</li>
@@ -41,7 +41,7 @@
     <div class="absolute w-[604px] h-[550px] bg-[#EFF8ED]  rounded-bl-[60px] z-0 top-0 bottom-0 right-0"></div>
     <div class="absolute w-[302px] h-[170px] bg-[#EFF8ED]  rounded-br-[60px] z-0 top-0 bottom-0 left-0"></div>
     <div
-      class="container w-[500px] h-[700px] font-montserrat font-bold flex flex-wrap flex-col items-center justify-center text-center z-10 relative">
+      class="container w-[500px] h-[700px]  font-bold flex flex-wrap flex-col items-center justify-center text-center z-10 relative">
       <h3 class="text-primary">For Better Future</h3>
       <h1 class="text-title text-[58px] leading-[80px] tracking-[.2px]">HIGH QUALITY COURSES</h1>
       <p class="text-second font-normal">Find the right instructor for you from over 10,000 teachers
@@ -65,7 +65,7 @@
     </div>
   </section>
   <section id="package">
-    <div class="container flex flex-col my-[112px] gap-y-[112px] font-montserrat font-bold">
+    <div class="container flex flex-col my-[112px] gap-y-[112px]  font-bold">
       <div class="flex-col flex gap-y-[10px]">
         <h3 class="text-sm text-primary leading-[20px]">Quick examination</h3>
         <h1 class="text-[40px] text-title">Approdable Packages</h1>
@@ -101,7 +101,7 @@
           <div class="relative">
             <span class="absolute">
               <svg width="66" height="67" viewBox="0 0 66 67" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
+                <path fill="#E77C40"
                   d="M7.75988 13.3472C11.891 7.76374 17.822 4.58068 24.5467 2.83189C32.786 0.689238 41.6047 -1.84735 48.8263 2.66772C57.7922 8.27338 66.4231 17.6476 64.9871 28.116C63.5861 38.3291 50.948 41.0958 42.7056 47.287C33.3624 54.3051 26.215 68.8056 14.9394 65.7091C3.62223 62.6013 1.86945 47.2572 0.275929 35.6352C-0.844441 27.4641 2.85584 19.9753 7.75988 13.3472Z"
                   fill="#B3E3FF" />
               </svg>
@@ -127,14 +127,527 @@
     </div>
   </section>
   <section id="cta">
-    <div class="container flex items-center">
-
+    <div class="container my-[160px] flex items-center justify-between gap-[203px]">
+      <div class="relative">
+        <img src="img/svg/Group 1.svg" class="absolute bottom-[60px] z-0" alt="" srcset="">
+        <img src="img/Placeholder.png" alt="" class="relative z-10" srcset="">
+      </div>
+      <div class="w-[381px] font-bold flex flex-col gap-[35px]">
+        <h1
+          class="text-[40px] before:content-[''] before:absolute before:mt-4 before:w-[94px] before:inline-block before:h-[4px] before:bg-[#E74040] before:-top-[30px] before:left-0  relative">
+          Most Popular Courses
+        </h1>
+        <p class="font-normal text-sm leading-[20px]">Problems trying to resolve the conflict between
+          the two major realms of Classical physics:
+          Newtonian mechanics </p>
+        <a href="#" class="text-primary flex items-center gap-5">Learn More <span><i
+              class="fa-solid fa-arrow-right"></i></span></a>
+      </div>
     </div>
   </section>
+  <section id="" class="bg-[#EFF8ED]">
+    <div class="container flex flex-col py-[112px] gap-[30px]">
+      <div class="flex flex-col gap-[10px]">
+        <h3 class="text-primary text-sm">Health Queries</h3>
+        <h1 class="text-title text-[40px] font-bold ">Our Experts Teacher</h1>
+        <p class="w-[450px] text-sm">Problems trying to resolve the conflict between
+          the two major realms of Classical physics: Newtonian mechanics</p>
+      </div>
+      <div class="flex items-center gap-[30px]">
+        <div class="">
+          <div class="relative">
+            <img src="img/product-cover-130 sec-.png" class="z-0 relative" alt="" srcset="">
+            <span class="absolute top-[15px] left-[15px] p-1.5 text-white rounded-xl bg-[#E74040]">Sale</span>
+            <div class="absolute left-[45px] bottom-5 mx-auto">
+              <div class="flex gap-2.5 text-[16px]">
+                <div
+                  class="w-10 h-10 flex hover:bg-gray-600 transition duration-200 hover:text-white items-center justify-center bg-white rounded-full">
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+                <div
+                  class="w-10 h-10 flex hover:bg-gray-600 transition duration-200 hover:text-white items-center justify-center bg-white rounded-full">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div
+                  class="w-10 h-10 flex hover:bg-gray-600 transition duration-200 hover:text-white items-center justify-center bg-white rounded-full">
+                  <i class="fa-solid fa-eye"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-5 flex-col gap-2.5 flex w-[241px] bg-white">
+            <div class="flex items-center justify-between">
+              <h1 class="text-primary">Training Courses</h1>
+              <div class="bg-[#2D4059] flex items-center gap-1.5 p-1.5 text-[12px] rounded-xl">
+                <i class="fa-solid fa-star text-[15px] text-yellow-400"></i>
+                <span class=" text-[12px] text-white">4.9</span>
+              </div>
+            </div>
+            <h1 class="text-base font-bold">Approdable Packages</h1>
+            <p class="font-normal">We focus on ergonomics and meeting you....</p>
+            <div class="flex items-center gap-2.5">
+              <i class="fa-solid fa-download"></i>
+              <span>15 Sales</span>
+            </div>
+            <div class="flex items-center font-bold gap-2.5">
+              <span class="text-second">$16.48</span>
+              <span class="text-[#FFAB71]"> $6.48</span>
+            </div>
+            <div class="flex items-center gap-2 text-[12px]">
+              <span class="flex items-center gap-2">
+                <i class="fa-solid fa-clock text-primary"></i>Pro...
+              </span>
+              <span class="flex items-center gap-2">
+                <i class="fa-solid fa-clock text-primary"></i>64 Les...
+              </span>
+              <span class="flex items-center gap-2">
+                <i class="fa-solid fa-clock text-second"></i>22hr..
+              </span>
+            </div>
+            <button
+              class="bg-transparent border-primary border p-2.5 rounded-full text-primary hover:text-white hover:bg-primary flex items-center justify-evenly w-[75%]">Learn
+              More <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+        <div class="">
+          <div class="relative">
+            <img src="img/product-cover-131.png" class="z-0 relative" alt="" srcset="">
+            <span class="absolute top-[15px] left-[15px] p-1.5 text-white rounded-xl bg-[#E74040]">Sale</span>
+            <div class="absolute left-[45px] bottom-5 mx-auto">
+              <div class="flex gap-2.5 text-[16px]">
+                <div
+                  class="w-10 h-10 flex hover:bg-gray-600 transition duration-200 hover:text-white items-center justify-center bg-white rounded-full">
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+                <div
+                  class="w-10 h-10 flex hover:bg-gray-600 transition duration-200 hover:text-white items-center justify-center bg-white rounded-full">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div
+                  class="w-10 h-10 flex hover:bg-gray-600 transition duration-200 hover:text-white items-center justify-center bg-white rounded-full">
+                  <i class="fa-solid fa-eye"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-5 flex-col gap-2.5 flex w-[241px] bg-white">
+            <div class="flex items-center justify-between">
+              <h1 class="text-primary">Training Courses</h1>
+              <div class="bg-[#2D4059] flex items-center gap-1.5 p-1.5 text-[12px] rounded-xl">
+                <i class="fa-solid fa-star text-[15px] text-yellow-400"></i>
+                <span class=" text-[12px] text-white">4.9</span>
+              </div>
+            </div>
+            <h1 class="text-base font-bold">Approdable Packages</h1>
+            <p class="font-normal">We focus on ergonomics and meeting you....</p>
+            <div class="flex items-center gap-2.5">
+              <i class="fa-solid fa-download"></i>
+              <span>15 Sales</span>
+            </div>
+            <div class="flex items-center font-bold gap-2.5">
+              <span class="text-second">$16.48</span>
+              <span class="text-[#FFAB71]"> $6.48</span>
+            </div>
+            <div class="flex items-center gap-2 text-[12px]">
+              <span class="flex items-center gap-2">
+                <i class="fa-solid fa-clock text-primary"></i>Pro...
+              </span>
+              <span class="flex items-center gap-2">
+                <i class="fa-solid fa-clock text-primary"></i>64 Les...
+              </span>
+              <span class="flex items-center gap-2">
+                <i class="fa-solid fa-clock text-second"></i>22hr..
+              </span>
+            </div>
+            <button
+              class="bg-transparent border-primary border p-2.5 rounded-full text-primary hover:text-white hover:bg-primary flex items-center justify-evenly w-[75%]">Learn
+              More <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+        <div class="">
+          <div class="relative">
+            <img src="img/product-cover-132 sec-.png" class="z-0 relative" alt="" srcset="">
+            <span class="absolute top-[15px] left-[15px] p-1.5 text-white rounded-xl bg-[#E74040]">Sale</span>
+            <div class="absolute left-[45px] bottom-5 mx-auto">
+              <div class="flex gap-2.5 text-[16px]">
+                <div
+                  class="w-10 h-10 flex hover:bg-gray-600 transition duration-200 hover:text-white items-center justify-center bg-white rounded-full">
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+                <div
+                  class="w-10 h-10 flex hover:bg-gray-600 transition duration-200 hover:text-white items-center justify-center bg-white rounded-full">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div
+                  class="w-10 h-10 flex hover:bg-gray-600 transition duration-200 hover:text-white items-center justify-center bg-white rounded-full">
+                  <i class="fa-solid fa-eye"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-5 flex-col gap-2.5 flex w-[241px] bg-white">
+            <div class="flex items-center justify-between">
+              <h1 class="text-primary">Training Courses</h1>
+              <div class="bg-[#2D4059] flex items-center gap-1.5 p-1.5 text-[12px] rounded-xl">
+                <i class="fa-solid fa-star text-[15px] text-yellow-400"></i>
+                <span class=" text-[12px] text-white">4.9</span>
+              </div>
+            </div>
+            <h1 class="text-base font-bold">Approdable Packages</h1>
+            <p class="font-normal">We focus on ergonomics and meeting you....</p>
+            <div class="flex items-center gap-2.5">
+              <i class="fa-solid fa-download"></i>
+              <span>15 Sales</span>
+            </div>
+            <div class="flex items-center font-bold gap-2.5">
+              <span class="text-second">$16.48</span>
+              <span class="text-[#FFAB71]"> $6.48</span>
+            </div>
+            <div class="flex items-center gap-2 text-[12px]">
+              <span class="flex items-center gap-2">
+                <i class="fa-solid fa-clock text-primary"></i>Pro...
+              </span>
+              <span class="flex items-center gap-2">
+                <i class="fa-solid fa-clock text-primary"></i>64 Les...
+              </span>
+              <span class="flex items-center gap-2">
+                <i class="fa-solid fa-clock text-second"></i>22hr..
+              </span>
+            </div>
+            <button
+              class="bg-transparent border-primary border p-2.5 rounded-full text-primary hover:text-white hover:bg-primary flex items-center justify-evenly w-[75%]">Learn
+              More <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+        <div class="">
+          <div class="relative">
+            <img src="img/product-cover-133 sec-.png" class="z-0 relative" alt="" srcset="">
+            <span class="absolute top-[15px] left-[15px] p-1.5 text-white rounded-xl bg-[#E74040]">Sale</span>
+            <div class="absolute left-[45px] bottom-5 mx-auto">
+              <div class="flex gap-2.5 text-[16px]">
+                <div
+                  class="w-10 h-10 flex hover:bg-gray-600 transition duration-200 hover:text-white items-center justify-center bg-white rounded-full">
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+                <div
+                  class="w-10 h-10 flex hover:bg-gray-600 transition duration-200 hover:text-white items-center justify-center bg-white rounded-full">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div
+                  class="w-10 h-10 flex hover:bg-gray-600 transition duration-200 hover:text-white items-center justify-center bg-white rounded-full">
+                  <i class="fa-solid fa-eye"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-5 flex-col gap-2.5 flex w-[241px] bg-white">
+            <div class="flex items-center justify-between">
+              <h1 class="text-primary">Training Courses</h1>
+              <div class="bg-[#2D4059] flex items-center gap-1.5 p-1.5 text-[12px] rounded-xl">
+                <i class="fa-solid fa-star text-[15px] text-yellow-400"></i>
+                <span class=" text-[12px] text-white">4.9</span>
+              </div>
+            </div>
+            <h1 class="text-base font-bold">Approdable Packages</h1>
+            <p class="font-normal">We focus on ergonomics and meeting you....</p>
+            <div class="flex items-center gap-2.5">
+              <i class="fa-solid fa-download"></i>
+              <span>15 Sales</span>
+            </div>
+            <div class="flex items-center font-bold gap-2.5">
+              <span class="text-second">$16.48</span>
+              <span class="text-[#FFAB71]"> $6.48</span>
+            </div>
+            <div class="flex items-center gap-2 text-[12px]">
+              <span class="flex items-center gap-2">
+                <i class="fa-solid fa-clock text-primary"></i>Pro...
+              </span>
+              <span class="flex items-center gap-2">
+                <i class="fa-solid fa-clock text-primary"></i>64 Les...
+              </span>
+              <span class="flex items-center gap-2">
+                <i class="fa-solid fa-clock text-second"></i>22hr..
+              </span>
+            </div>
+            <button
+              class="bg-transparent border-primary border p-2.5 rounded-full text-primary hover:text-white hover:bg-primary flex items-center justify-evenly w-[75%]">Learn
+              More <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="" class="my-[160px]">
+    <div class="container flex flex-col gap-[80px]">
+      <div class="font-bold flex gap-2.5 flex-col">
+        <h3 class="text-primary ">Practice Advice</h3>
+        <h1 class=" text-title text-[40px]">Get Quality Education</h1>
+        <p class="w-[463px] font-normal">Problems trying to resolve the conflict between the two major realms of
+          Classical physics: Newtonian mechanics
+        </p>
+      </div>
+      <div class="flex items-center gap-5">
+        <div class="shadow-xl flex flex-col gap-[35px] p-[40px]">
+          <span class="w-[96px] h-[96px] bg-primary rounded-full flex items-center justify-center"><i
+              class="fa-solid fa-heart text-[40px] text-white"></i></span>
+          <h1 class="text-[24px] font-bold text-primary">FREE</h1>
+          <p class="text-sm tracking-[.2px] text-second">Organize across all apps by
+            hand</p>
+          <div class="">
+            <h1 class="text-[40px] font-bold text-primary">19$</h1>
+            <span class="text-[#8EC2F2]">Per Month</span>
+          </div>
+          <div class="text-[14px] text-second">
+            Slate helps you see how many more days you need...
+          </div>
+          <button class="bg-primary text-white rounded-md p-[15px]">Try for free</button>
+          <ul class="flex flex-col gap-5">
+            <li class="flex items-center text-[14px]"><span
+                class="bg-[#2DC071] mr-2 flex items-center justify-center w-[32px] h-[32px] rounded-full">
+                <i class="text-white fa-solid fa-check"></i></span> Unlimited
+              product updates
+            </li>
+            <li class="flex items-center text-[14px]"><span
+                class="bg-[#2DC071] mr-2 flex items-center justify-center w-[32px] h-[32px] rounded-full">
+                <i class="text-white fa-solid fa-check"></i></span> Unlimited
+              product updates
+            </li>
+            <li class="flex items-center text-[14px]"><span
+                class="bg-[#2DC071] mr-2 flex items-center justify-center w-[32px] h-[32px] rounded-full">
+                <i class="text-white fa-solid fa-check"></i></span> Unlimited
+              product updates
+            </li>
+            <li class="flex items-center text-[14px]"><span
+                class="bg-[#BDBDBD] mr-2 flex items-center justify-center w-[32px] h-[32px] rounded-full">
+                <i class="text-white fa-solid fa-check"></i></span> 1 GB Cloud Storage
+            </li>
+            <li class="flex items-center text-[14px]"><span
+                class="bg-[#BDBDBD] mr-2 flex items-center justify-center w-[32px] h-[32px] rounded-full">
+                <i class="text-white fa-solid fa-check"></i></span>Email and community
+              support
+            </li>
+          </ul>
+        </div>
+        <div class="shadow-xl flex flex-col gap-[35px] p-[40px]">
+          <span class="w-[96px] h-[96px] bg-primary rounded-full flex items-center justify-center"><i
+              class="fa-solid fa-heart text-[40px] text-white"></i></span>
+          <h1 class="text-[24px] font-bold text-primary">FREE</h1>
+          <p class="text-sm tracking-[.2px] text-second">Organize across all apps by
+            hand</p>
+          <div class="">
+            <h1 class="text-[40px] font-bold text-primary">19$</h1>
+            <span class="text-[#8EC2F2]">Per Month</span>
+          </div>
+          <div class="text-[14px] text-second">
+            Slate helps you see how many more days you need...
+          </div>
+          <button class="bg-primary text-white rounded-md p-[15px]">Try for free</button>
+          <ul class="flex flex-col gap-5">
+            <li class="flex items-center text-[14px]"><span
+                class="bg-[#2DC071] mr-2 flex items-center justify-center w-[32px] h-[32px] rounded-full">
+                <i class="text-white fa-solid fa-check"></i></span> Unlimited
+              product updates
+            </li>
+            <li class="flex items-center text-[14px]"><span
+                class="bg-[#2DC071] mr-2 flex items-center justify-center w-[32px] h-[32px] rounded-full">
+                <i class="text-white fa-solid fa-check"></i></span> Unlimited
+              product updates
+            </li>
+            <li class="flex items-center text-[14px]"><span
+                class="bg-[#2DC071] mr-2 flex items-center justify-center w-[32px] h-[32px] rounded-full">
+                <i class="text-white fa-solid fa-check"></i></span> Unlimited
+              product updates
+            </li>
+            <li class="flex items-center text-[14px]"><span
+                class="bg-[#BDBDBD] mr-2 flex items-center justify-center w-[32px] h-[32px] rounded-full">
+                <i class="text-white fa-solid fa-check"></i></span> 1 GB Cloud Storage
+            </li>
+            <li class="flex items-center text-[14px]"><span
+                class="bg-[#BDBDBD] mr-2 flex items-center justify-center w-[32px] h-[32px] rounded-full">
+                <i class="text-white fa-solid fa-check"></i></span>Email and community
+              support
+            </li>
+          </ul>
+        </div>
+        <div class="shadow-xl flex flex-col gap-[35px] p-[40px]">
+          <span class="w-[96px] h-[96px] bg-primary rounded-full flex items-center justify-center"><i
+              class="fa-solid fa-heart text-[40px] text-white"></i></span>
+          <h1 class="text-[24px] font-bold text-primary">FREE</h1>
+          <p class="text-sm tracking-[.2px] text-second">Organize across all apps by
+            hand</p>
+          <div class="">
+            <h1 class="text-[40px] font-bold text-primary">19$</h1>
+            <span class="text-[#8EC2F2]">Per Month</span>
+          </div>
+          <div class="text-[14px] text-second">
+            Slate helps you see how many more days you need...
+          </div>
+          <button class="bg-primary text-white rounded-md p-[15px]">Try for free</button>
+          <ul class="flex flex-col gap-5">
+            <li class="flex items-center text-[14px]"><span
+                class="bg-[#2DC071] mr-2 flex items-center justify-center w-[32px] h-[32px] rounded-full">
+                <i class="text-white fa-solid fa-check"></i></span> Unlimited
+              product updates
+            </li>
+            <li class="flex items-center text-[14px]"><span
+                class="bg-[#2DC071] mr-2 flex items-center justify-center w-[32px] h-[32px] rounded-full">
+                <i class="text-white fa-solid fa-check"></i></span> Unlimited
+              product updates
+            </li>
+            <li class="flex items-center text-[14px]"><span
+                class="bg-[#2DC071] mr-2 flex items-center justify-center w-[32px] h-[32px] rounded-full">
+                <i class="text-white fa-solid fa-check"></i></span> Unlimited
+              product updates
+            </li>
+            <li class="flex items-center text-[14px]"><span
+                class="bg-[#BDBDBD] mr-2 flex items-center justify-center w-[32px] h-[32px] rounded-full">
+                <i class="text-white fa-solid fa-check"></i></span> 1 GB Cloud Storage
+            </li>
+            <li class="flex items-center text-[14px]"><span
+                class="bg-[#BDBDBD] mr-2 flex items-center justify-center w-[32px] h-[32px] rounded-full">
+                <i class="text-white fa-solid fa-check"></i></span>Email and community
+              support
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="testimoni">
+    <div class="container my-[160px] flex flex-col gap-[96px]">
+      <div class="font-bold flex flex-col">
+        <h3 class="text-primary ">Testimonial</h3>
+        <h1 class="text-title text-[40px]">Get Quality Education</h1>
+        <p class="w-[463px] font-normal text-sm">Problems trying to resolve the conflict between
+          the two major realms of Classical physics: Newtonian mechanics </p>
+      </div>
+      <div class="flex items-center gap-[30px]">
+        <div class="flex w-[508px] items-center justify-center flex-col gap-[30px]">
+          <img class="rounded-full" src="img/frame.png" alt="">
+          <div class="flex flex-col font-bold items-center gap-[16px] text-center">
+            <p class="font-normal w-[311px]">Slate helps you see how many more days you need to work to reach your
+              financial goal
+              for the month and
+              year.</p>
+            <div class="flex gap-2 text-[#F3CD03]">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h1 class="text-base text-title">Regina Miles</h1>
+            <h3 class="text-sm text-second">Designer</h3>
+          </div>
+        </div>
+        <div class="flex w-[508px] items-center justify-center flex-col gap-[30px]">
+          <img class="rounded-full" src="img/testimonial-user-cover-2.png" alt="">
+          <div class="flex flex-col font-bold items-center gap-[16px] text-center">
+            <p class="font-normal w-[311px]">Slate helps you see how many more days you need to work to reach your
+              financial goal
+              for the month and
+              year.</p>
+            <div class="flex gap-2 text-[#F3CD03]">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h1 class="text-base text-title">Regina Miles</h1>
+            <h3 class="text-sm text-second">Designer</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="container my-[160px] flex items-center flex-col gap-20">
+      <div class="flex items-center flex-col gap-2.5 text-center font-bold">
+        <h3 class="text-sm text-primary">Newsletter</h3>
+        <h1 class="text-[40px] text-title ">Our Experts Teacher</h1>
+        <p class="font-normal text-sm w-[463px]">Problems trying to resolve the conflict between
+          the two major realms of Classical physics: Newtonian mechanics </p>
+      </div>
+      <div class="relative w-full flex items-center justify-center ">
+        <input type="text"
+          class="relative border border-gray-700 bg-[#E6E6E6] rounded-lg placeholder:text-second w-[668px] h-[58px] p-5"
+          placeholder="Your Email">
+        <button
+          class="absolute w-[117px] h-[58px] flex items-center justify-center top-0 bottom-0 right-[130px] rounded-lg bg-primary text-white">Submit</button>
+      </div>
+    </div>
+  </section>
+  <section id="footer-1">
+    <div class="container flex items-center gap-[30px] font-bold mt-[160px] mb-[52px]">
+      <div class="flex flex-col gap-5 w-[148px]">
+        <h1 class="text-title">Company Info</h1>
+        <ul class="flex flex-col gap-2.5 text-second">
+          <li class="">About Us</li>
+          <li class="">Carrier</li>
+          <li class="">We are hiring</li>
+          <li class="">Blog</li>
+        </ul>
+      </div>
+      <div class="flex flex-col gap-5 w-[148px]">
+        <h1 class="text-title">Legal</h1>
+        <ul class="flex flex-col gap-2.5 text-second">
+          <li class="">About Us</li>
+          <li class="">Carrier</li>
+          <li class="">We are hiring</li>
+          <li class="">Blog</li>
+        </ul>
+      </div>
+      <div class="flex flex-col gap-5 w-[148px]">
+        <h1 class="text-title">Features</h1>
+        <ul class="flex flex-col gap-2.5 text-second">
+          <li class="">About Us</li>
+          <li class="">Carrier</li>
+          <li class="">We are hiring</li>
+          <li class="">Blog</li>
+        </ul>
+      </div>
+      <div class="flex flex-col gap-5 w-[148px]">
+        <h1 class="text-title">Resources</h1>
+        <ul class="flex flex-col gap-2.5 text-second">
+          <li class="">About Us</li>
+          <li class="">Carrier</li>
+          <li class="">We are hiring</li>
+          <li class="">Blog</li>
+        </ul>
+      </div>
+      <div class="flex flex-col gap-5 w-[321px]">
+        <h1 class="text-title">Get In Touch</h1>
+        <div class="flex gap-10">
+          <i class="text-primary fa-solid fa-phone"></i>
+          <h3 class="text-second">(480) 555 - 0103</h3>
+        </div>
+        <div class="flex gap-10">
+          <i class="text-primary fa-solid fa-location-dot"></i>
+          <h3 class="text-second">4517 Washington Ave. Manchester,
+            Kentucky 39495</h3>
+        </div>
+        <div class="flex gap-10">
+          <i class="text-primary fa-solid fa-envelope"></i>
+          <h3 class="text-second">debra.holt@example.com</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-[#FAFAFA]">
+    <div class="container flex py-[25px] items-center justify-between">
+      <h1 class="text-second font-bold">Made With Love By Figmaland All Right Reserved </h1>
+      <div class="flex gap-5 text-[24px] text-primary">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+      </div>
+    </div>
+  </footer>
   <div class="fixed bottom-5 right-10 w-5">
-    <button class="p-1.5 focus:ring focus:ring-gray-700 rounded-lg">
-      <i class="fa-solid fa-moon text-[30px] hidden"></i>
-      <i class="fa-solid fa-sun text-[30px]"></i>
+    <button id="theme-button" class="p-1.5 focus:ring focus:ring-gray-700 rounded-lg">
+      <i id="icon-dark" class="fa-solid fa-moon text-[30px] hidden text-title"></i>
+      <i id="icon-light" class="fa-solid fa-sun text-[30px] text-title"></i>
     </button>
   </div>
   <script>
@@ -143,48 +656,3 @@
 </body>
 
 </html>
-
-
-
-
-<!-- -->
-
-<!--
-atomic behaviour...
-Lifetime access
-The gradual
-accumulation of
-information about -->
-
-<!-- Most Popular
-Courses
-Problems trying to resolve the conflict between
-the two major realms of Classical physics:
-Newtonian mechanics 
-Learn More -->
-
-<!-- Health Queries
-Our Experts Teacher
-Problems trying to resolve the conflict between 
-the two major realms of Classical physics: Newtonian mechanics  -->
-
-<!-- Training Courses
-* 4.9 Sale
-Approdable Packages
-We focus on ergonomics 
-and meeting you....
-15 Sales
-$16.48 $6.48
-Pro... 64 Les... 22hr..
-Learn More -->
-
-<!-- 
-  Practice Advice 
-  Get Quality Education
-  Problems trying to resolve the conflict between 
-  the two major realms of Classical physics: Newtonian mechanics 
-  New FREE Organize across all apps by 
-  hand 19$ Per Month 
-  Slate helps you see how many more days you need...
-  Try for free Unlimited product updates
--->
