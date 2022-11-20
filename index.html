@@ -14,14 +14,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BrandName</title>
   <link rel="stylesheet" href="style.css">
+  <script>
+    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+  </script>
 </head>
 
 <body class="font-montserrat">
   <nav class="backdrop-blur-[3px] bg-transparent fixed top-0 left-0 right-0 font-bold  z-50">
     <div class="container py-4 flex justify-between lg:justify-start items-center gap-[41px]">
       <h1 class=" text-2xl">Brandname</h1>
-      <div class="hidden lg:flex items-center gap-[240px]">
-        <ul id="" class=" flex gap-4 text-sm text-second drop-shadow-md">
+      <button class="lg:hidden flex">
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-x hidden"></i>
+      </button>
+      <div id="nav-content" class="hidden lg:flex items-center gap-[240px]">
+        <ul id="nav-item" class="hidden lg:flex gap-4 text-sm text-second drop-shadow-md">
           <li>Home</li>
           <li>Product</li>
           <li>Pricing</li>
@@ -38,8 +49,11 @@
     </div>
   </nav>
   <section id="hero">
-    <div class="absolute w-[604px] h-[550px] bg-[#EFF8ED]  rounded-bl-[60px] z-0 top-0 bottom-0 right-0"></div>
-    <div class="absolute w-[302px] h-[170px] bg-[#EFF8ED]  rounded-br-[60px] z-0 top-0 bottom-0 left-0"></div>
+    <div
+      class="absolute w-[201px] md:w-[402px] lg:w-[604px] h-[550px] bg-[#EFF8ED]  rounded-bl-[60px] z-0 top-0 bottom-0 right-0">
+    </div>
+    <div class="absolute w-[150px] lg:w-[302px] h-[170px] bg-[#EFF8ED]  rounded-br-[60px] z-0 top-0 bottom-0 left-0">
+    </div>
     <div
       class="container w-[500px] h-[700px]  font-bold flex flex-wrap flex-col items-center justify-center text-center z-10 relative">
       <h3 class="text-primary">For Better Future</h3>
@@ -55,7 +69,8 @@
     </div>
   </section>
   <section id="logo">
-    <div class="flex items-center container gap-[100px] text-second text-[5rem] ">
+    <div
+      class="flex flex-wrap p-5 lg:p-0 lg:flex-row lg:flex-nowrap justify-center lg:justify-start items-center container gap-[100px] text-second text-[5rem] ">
       <i class="fa-brands fa-hooli"></i>
       <i class="fa-brands fa-lyft"></i>
       <i class="fa-brands fa-pied-piper-hat"></i>
@@ -65,25 +80,27 @@
     </div>
   </section>
   <section id="package">
-    <div class="container flex flex-col my-[112px] gap-y-[112px]  font-bold">
+    <div
+      class="container flex flex-wrap lg:flex-col lg:items-start items-center lg:text-start text-center justify-center lg:justify-start my-[112px] gap-y-[112px] lg:flex-nowrap font-bold">
       <div class="flex-col flex gap-y-[10px]">
         <h3 class="text-sm text-primary leading-[20px]">Quick examination</h3>
         <h1 class="text-[40px] text-title">Approdable Packages</h1>
-        <p class="font-normal text-sm leading-[20px] w-[45%]"> Problems trying to resolve the conflict between the two
+        <p class="font-normal text-sm leading-[20px] w-full lg:w-[50%]"> Problems trying to resolve the conflict between
+          the two
           major
           realms of Classical physics:
           Newtonian
           mechanics
         </p>
       </div>
-      <div class="flex items-center gap-[30px]">
+      <div class="flex items-center flex-wrap lg:flex-nowrap gap-[30px]">
         <div class="flex items-start gap-[20px] flex-col shadow-xl px-[40px] py-[35px]">
           <div class="relative">
             <img src="img/svg/Vector.svg" class="absolute inset-0 z-0" alt="">
             <img src="img/svg/014-school-1.svg" alt="" class="relative z-10">
           </div>
           <h1
-            class="text-[16px] leading-[24px] after:inline-block after:content-[''] after:w-[70px] after:h-[2px] after:bg-[#E74040]">
+            class="text-[16px] leading-[24px] after:flex after:flex-col lg:after:inline-block after:content-[''] after:w-[70px] after:h-[2px] after:bg-[#E74040]">
             Training Courses</h1>
           <p class="text-sm leading-5 font-normal">The gradual accumulation of information about</p>
         </div>
@@ -93,7 +110,7 @@
             <img src="img/svg/Page-1.svg" alt="" class="relative z-10">
           </div>
           <h1
-            class="text-[16px] leading-[24px] after:inline-block after:content-[''] after:w-[70px] after:h-[2px] after:bg-[#E74040]">
+            class="text-[16px] leading-[24px] after:flex after:flex-col lg:after:inline-block after:content-[''] after:w-[70px] after:h-[2px] after:bg-[#E74040]">
             Training Courses</h1>
           <p class="text-sm leading-5 font-normal">The gradual accumulation of information about</p>
         </div>
@@ -109,7 +126,7 @@
             <img src="img/svg/017-education.svg" alt="" class="relative z-10">
           </div>
           <h1
-            class="text-[16px] leading-[24px] after:inline-block after:content-[''] after:w-[70px] after:h-[2px] after:bg-[#E74040]">
+            class="text-[16px] leading-[24px] after:flex after:flex-col lg:after:inline-block after:content-[''] after:w-[70px] after:h-[2px] after:bg-[#E74040]">
             Training Courses</h1>
           <p class="text-sm leading-5 font-normal">The gradual accumulation of information about</p>
         </div>
@@ -119,7 +136,7 @@
             <img src="img/svg/016-knowledge.svg" alt="" class="relative z-10">
           </div>
           <h1
-            class="text-[16px] leading-[24px] after:inline-block after:content-[''] after:w-[70px] after:h-[2px] after:bg-[#E74040]">
+            class="text-[16px] leading-[24px] after:flex after:flex-col lg:after:inline-block after:content-[''] after:w-[70px] after:h-[2px] after:bg-[#E74040] after:mb-2.5 lg:after:mb-0">
             Training Courses</h1>
           <p class="text-sm leading-5 font-normal">The gradual accumulation of information about</p>
         </div>
@@ -127,14 +144,15 @@
     </div>
   </section>
   <section id="cta">
-    <div class="container my-[160px] flex items-center justify-between gap-[203px]">
+    <div
+      class="container my-[160px]  flex-wrap lg:flex-row lg:flex-nowrap flex items-center justify-center lg:justify-between gap-[203px]">
       <div class="relative">
         <img src="img/svg/Group 1.svg" class="absolute bottom-[60px] z-0" alt="" srcset="">
         <img src="img/Placeholder.png" alt="" class="relative z-10" srcset="">
       </div>
-      <div class="w-[381px] font-bold flex flex-col gap-[35px]">
+      <div class="w-[381px] font-bold lg:items-start items-center lg:text-start text-center flex flex-col gap-[35px]">
         <h1
-          class="text-[40px] before:content-[''] before:absolute before:mt-4 before:w-[94px] before:inline-block before:h-[4px] before:bg-[#E74040] before:-top-[30px] before:left-0  relative">
+          class="text-[40px] before:content-[''] before:absolute before:mt-4 before:w-[94px] before:inline-block before:h-[4px] before:inset-0 before:bg-[#E74040] before:-top-[30px] before:left-0  relative">
           Most Popular Courses
         </h1>
         <p class="font-normal text-sm leading-[20px]">Problems trying to resolve the conflict between
@@ -146,15 +164,15 @@
     </div>
   </section>
   <section id="" class="bg-[#EFF8ED]">
-    <div class="container flex flex-col py-[112px] gap-[30px]">
+    <div class="container flex flex-wrap lg:flex-col lg:flex-nowrap py-[112px] gap-[30px]">
       <div class="flex flex-col gap-[10px]">
         <h3 class="text-primary text-sm">Health Queries</h3>
         <h1 class="text-title text-[40px] font-bold ">Our Experts Teacher</h1>
         <p class="w-[450px] text-sm">Problems trying to resolve the conflict between
           the two major realms of Classical physics: Newtonian mechanics</p>
       </div>
-      <div class="flex items-center gap-[30px]">
-        <div class="">
+      <div class="flex flex-wrap lg:flex-nowrap items-center gap-[30px]">
+        <div class="flex flex-col">
           <div class="relative">
             <img src="img/product-cover-130 sec-.png" class="z-0 relative" alt="" srcset="">
             <span class="absolute top-[15px] left-[15px] p-1.5 text-white rounded-xl bg-[#E74040]">Sale</span>
@@ -386,7 +404,7 @@
           Classical physics: Newtonian mechanics
         </p>
       </div>
-      <div class="flex items-center gap-5">
+      <div class="flex items-center flex-wrap lg:flex-row lg:flex-nowrap gap-5">
         <div class="shadow-xl flex flex-col gap-[35px] p-[40px]">
           <span class="w-[96px] h-[96px] bg-primary rounded-full flex items-center justify-center"><i
               class="fa-solid fa-heart text-[40px] text-white"></i></span>
@@ -515,13 +533,13 @@
   </section>
   <section id="testimoni">
     <div class="container my-[160px] flex flex-col gap-[96px]">
-      <div class="font-bold flex flex-col">
+      <div class="font-bold flex flex-col items-center lg:items-start">
         <h3 class="text-primary ">Testimonial</h3>
         <h1 class="text-title text-[40px]">Get Quality Education</h1>
         <p class="w-[463px] font-normal text-sm">Problems trying to resolve the conflict between
           the two major realms of Classical physics: Newtonian mechanics </p>
       </div>
-      <div class="flex items-center gap-[30px]">
+      <div class="flex items-center flex-wrap lg:flex-row lg:flex-nowrap gap-[30px]">
         <div class="flex w-[508px] items-center justify-center flex-col gap-[30px]">
           <img class="rounded-full" src="img/frame.png" alt="">
           <div class="flex flex-col font-bold items-center gap-[16px] text-center">
@@ -579,7 +597,8 @@
     </div>
   </section>
   <section id="footer-1">
-    <div class="container flex items-center gap-[30px] font-bold mt-[160px] mb-[52px]">
+    <div
+      class="container flex items-center gap-[30px] flex-wrap lg:flex-row lg:flex-nowrap font-bold mt-[160px] mb-[52px]">
       <div class="flex flex-col gap-5 w-[148px]">
         <h1 class="text-title">Company Info</h1>
         <ul class="flex flex-col gap-2.5 text-second">
@@ -635,7 +654,7 @@
     </div>
   </section>
   <footer class="bg-[#FAFAFA]">
-    <div class="container flex py-[25px] items-center justify-between">
+    <div class="container flex flex-col lg:flex-row py-[25px] items-center justify-between">
       <h1 class="text-second font-bold">Made With Love By Figmaland All Right Reserved </h1>
       <div class="flex gap-5 text-[24px] text-primary">
         <i class="fa-brands fa-facebook"></i>
@@ -645,12 +664,19 @@
     </div>
   </footer>
   <div class="fixed bottom-5 right-10 w-5">
-    <button id="theme-button" class="p-1.5 focus:ring focus:ring-gray-700 rounded-lg">
-      <i id="icon-dark" class="fa-solid fa-moon text-[30px] hidden text-title"></i>
-      <i id="icon-light" class="fa-solid fa-sun text-[30px] text-title"></i>
+    <button id="themeButton" class="p-1.5 focus:ring focus:ring-gray-700 rounded-lg">
+      <i id="darkIcon" class="fa-solid fa-moon text-[30px] hidden text-title"></i>
+      <i id="lightIcon" class="fa-solid fa-sun text-[30px] text-title"></i>
     </button>
   </div>
   <script>
+    themeButton = document.getElementById("themeButton")
+    darkIcon = document.getElementById("#darkIcon")
+    lightIcon = document.getElementById("#lightIcon")
+
+    themeButton.addEventListener("click", {
+
+    })
     if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-theme: dark)").matches)) { document.documentElement.classList.add("dark") } else { document.documentElement.classList.remove("dark") } 
   </script>
 </body>
