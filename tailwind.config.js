@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     container: {
       screens: {
-        xl: "1050px"
+        lg: "1050px"
       },
       center : true
     },
