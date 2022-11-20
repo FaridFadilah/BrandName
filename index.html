@@ -14,32 +14,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BrandName</title>
   <link rel="stylesheet" href="style.css">
-  <script>
-    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark')
-    }
-  </script>
 </head>
 
 <body class="font-montserrat">
   <nav class="backdrop-blur-[3px] bg-transparent fixed top-0 left-0 right-0 font-bold z-50">
-    <div class="container py-4 lg:px-0 px-10 flex justify-between lg:justify-start items-center gap-[41px]">
-      <h1 class=" text-2xl">Brandname</h1>
-      <button class="lg:hidden flex">
-        <i class="fa-solid fa-bars"></i>
-        <i class="fa-solid fa-x hidden"></i>
-      </button>
-      <div id="nav-content" class="hidden lg:flex items-center gap-[240px]">
-        <ul id="nav-item" class="hidden lg:flex gap-4 text-sm text-second drop-shadow-md">
-          <li>Home</li>
-          <li>Product</li>
-          <li>Pricing</li>
-          <li>Contact</li>
+    <div
+      class="container py-4 lg:px-0 px-10 flex flex-col lg:flex-row justify-between lg:justify-start items-center gap-[41px]">
+      <div class="w-full lg:w-auto flex justify-between items-center">
+        <h1 class="dark:text-white text-title text-2xl">Brandname</h1>
+        <button id="navButton" class="lg:hidden flex text-[24px] focus:ring focus:ring-gray-500 rounded-xl p-5">
+          <i id="navBars" class="fa-solid fa-bars "></i>
+          <i id="navX" class="fa-solid fa-x hidden "></i>
+        </button>
+      </div>
+      <div id="nav-content" class="hidden flex-col md:flex-row lg:flex items-center gap-5 lg:gap-[240px]">
+        <ul id="nav-item"
+          class="flex-col md:flex-row items-center flex gap-4 text-sm text-second drop-shadow-md dark:text-white">
+          <li><a href="">Home</a></li>
+          <li><a href=""> Product</a></li>
+          <li><a href="">Pricing</a> </li>
+          <li><a href=""> Contact</a></li>
         </ul>
         <div class="flex gap-[45px] items-center">
-          <a href="#" class="text-primary">Login</a>
+          <a href="#" class="text-primary dark:text-[#d4f0c0]">Login</a>
           <button
             class="text-white bg-primary px-[25px] py-[15px] rounded-[5px] flex gap-[15px] text-sm leading-[22px] items-center">Join
             us<span><i class="fa-solid fa-arrow-right"></i></span>
@@ -48,31 +45,31 @@
       </div>
     </div>
   </nav>
-  <section id="hero">
+  <section id="hero" class="dark:bg-gray-600">
     <div
-      class="absolute md:w-[300px] lg:w-[604px] h-[550px] bg-[#EFF8ED]  rounded-bl-[60px] z-0 top-0 bottom-0 right-0">
+      class="absolute md:w-[300px] lg:w-[604px] h-[550px] bg-[#EFF8ED] dark:bg-gray-400 rounded-bl-[60px] z-0 top-0 bottom-0 right-0">
     </div>
     <div
-      class="absolute w-[75px] md:w-[150px] lg:w-[302px] h-[170px] bg-[#EFF8ED] rounded-br-[60px] z-0 top-0 bottom-0 left-0">
+      class="absolute w-[75px] md:w-[150px] lg:w-[302px] h-[170px] bg-[#EFF8ED] dark:bg-gray-400 rounded-br-[60px] z-0 top-0 bottom-0 left-0">
     </div>
     <div
-      class="container w-[450px] lg:w-[500px] h-[700px] font-bold flex flex-wrap flex-col items-center justify-center text-center z-10 relative">
+      class="container w-[450px] lg:w-[500px] h-[700px] font-bold flex flex-wrap flex-col items-center justify-center text-center z-10 relative ">
       <h3 class="text-primary">For Better Future</h3>
-      <h1 class="text-title text-[58px] leading-[80px] tracking-[.2px]">HIGH QUALITY COURSES</h1>
-      <p class="text-second font-normal">Find the right instructor for you from over 10,000 teachers
+      <h1 class="text-title dark:text-gray-100 text-[58px] leading-[80px] tracking-[.2px]">HIGH QUALITY COURSES</h1>
+      <p class="text-second dark:text-gray-100 font-normal">Find the right instructor for you from over 10,000 teachers
       </p>
       <div class="flex items-center gap-[15px] mt-20">
         <button class="px-[40px] py-[15px] bg-primary text-white rounded-xl">Get Quote
           Now</button>
         <button
-          class="px-[40px] py-[15px] bg-transparent border-2 border-primary text-primary rounded-xl hover:bg-primary hover:text-white transition duration-200">Learn
+          class="px-[40px] py-[15px] bg-transparent border-2 border-primary text-primary rounded-xl hover:bg-primary dark:text-white hover:text-white transition duration-200">Learn
           More</button>
       </div>
     </div>
   </section>
-  <section id="logo">
+  <section id="logo" class="bg-white dark:bg-gray-600">
     <div
-      class="flex flex-wrap lg:flex-row lg:flex-nowrap px-5 md:px-20 lg:px-0 justify-center lg:justify-start items-center container gap-[100px] text-second text-[5rem] ">
+      class="flex flex-wrap lg:flex-row lg:flex-nowrap px-5 md:px-20 lg:px-0 justify-center lg:justify-start items-center container gap-x-[100px] text-second text-[5rem] dark:text-white">
       <i class="fa-brands fa-hooli"></i>
       <i class="fa-brands fa-lyft"></i>
       <i class="fa-brands fa-pied-piper-hat"></i>
@@ -81,13 +78,14 @@
       <i class="fa-brands fa-reddit"></i>
     </div>
   </section>
-  <section id="package">
+  <section id="package" class="bg-white dark:bg-gray-600">
     <div
-      class="container flex flex-wrap lg:flex-col lg:items-start items-center lg:text-start text-center justify-center lg:justify-start my-[112px] gap-y-[112px] lg:flex-nowrap font-bold">
+      class="container flex flex-wrap lg:flex-col lg:items-start items-center lg:text-start text-center justify-center lg:justify-start py-[112px] gap-y-[112px] lg:flex-nowrap font-bold">
       <div class="flex-col flex items-center lg:items-start justify-center lg:justify-start gap-y-[10px]">
         <h3 class="text-sm text-primary leading-[20px]">Quick examination</h3>
-        <h1 class="text-[40px] text-title">Approdable Packages</h1>
-        <p class="font-normal text-sm leading-[20px] w-[50%]"> Problems trying to resolve the conflict between
+        <h1 class="text-[40px] dark:text-gray-100 text-title">Approdable Packages</h1>
+        <p class="font-normal dark:text-gray-100 text-sm leading-[20px] w-[50%]"> Problems trying to resolve the
+          conflict between
           the two
           major
           realms of Classical physics:
@@ -102,9 +100,9 @@
             <img src="img/svg/014-school-1.svg" alt="" class="relative z-10">
           </div>
           <h1
-            class="text-[16px] leading-[24px] after:flex after:flex-col lg:after:inline-block after:content-[''] after:w-[70px] after:h-[2px] lg:after:m-0 after:my-3  after:bg-[#E74040]">
+            class="text-[16px] leading-[24px] after:flex after:flex-col lg:after:inline-block after:content-[''] after:w-[70px] after:h-[2px] lg:after:m-0 after:my-3 after:bg-[#E74040] dark:text-gray-100">
             Training Courses</h1>
-          <p class="text-sm leading-5 font-normal">The gradual accumulation of information about</p>
+          <p class="text-sm leading-5 font-normal dark:text-gray-100">The gradual accumulation of information about</p>
         </div>
         <div class="flex lg:items-start items-center gap-[20px] flex-col shadow-xl px-[40px] py-[35px]">
           <div class="relative">
@@ -112,9 +110,9 @@
             <img src="img/svg/Page-1.svg" alt="" class="relative z-10">
           </div>
           <h1
-            class="text-[16px] leading-[24px] after:flex after:flex-col lg:after:inline-block after:content-[''] after:w-[70px] after:h-[2px] lg:after:m-0 after:my-3  after:bg-[#E74040]">
+            class="text-[16px] leading-[24px] after:flex after:flex-col lg:after:inline-block after:content-[''] after:w-[70px] after:h-[2px] lg:after:m-0 after:my-3  after:bg-[#E74040] dark:text-gray-100">
             Training Courses</h1>
-          <p class="text-sm leading-5 font-normal">The gradual accumulation of information about</p>
+          <p class="text-sm leading-5 font-normal dark:text-gray-100">The gradual accumulation of information about</p>
         </div>
         <div
           class="flex lg:items-start items-center gap-[20px] flex-col shadow-xl bg-primary text-white px-[40px] py-[35px]">
@@ -129,9 +127,9 @@
             <img src="img/svg/017-education.svg" alt="" class="relative z-10">
           </div>
           <h1
-            class="text-[16px] leading-[24px] after:flex after:flex-col lg:after:inline-block after:content-[''] after:w-[70px] after:h-[2px] lg:after:m-0 after:my-3 after:bg-[#fff]">
+            class="text-[16px] leading-[24px] after:flex after:flex-col lg:after:inline-block after:content-[''] after:w-[70px] after:h-[2px] lg:after:m-0 after:my-3 after:bg-[#fff] dark:text-gray-100">
             Training Courses</h1>
-          <p class="text-sm leading-5 font-normal">The gradual accumulation of information about</p>
+          <p class="text-sm leading-5 font-normal dark:text-gray-100">The gradual accumulation of information about</p>
         </div>
         <div class="flex lg:items-start items-center gap-[20px] flex-col shadow-xl px-[40px] py-[35px]">
           <div class="relative">
@@ -139,40 +137,40 @@
             <img src="img/svg/016-knowledge.svg" alt="" class="relative z-10">
           </div>
           <h1
-            class="text-[16px] leading-[24px] after:flex after:flex-col lg:after:inline-block after:content-[''] after:w-[70px] after:h-[2px] lg:after:m-0 after:my-3 after:bg-[#E74040] after:mb-2.5 lg:after:mb-0">
+            class="text-[16px] leading-[24px] after:flex after:flex-col lg:after:inline-block after:content-[''] after:w-[70px] after:h-[2px] lg:after:m-0 after:my-3 after:bg-[#E74040] after:mb-2.5 lg:after:mb-0 dark:text-gray-100">
             Training Courses</h1>
-          <p class="text-sm leading-5 font-normal">The gradual accumulation of information about</p>
+          <p class="text-sm leading-5 font-normal dark:text-gray-100">The gradual accumulation of information about</p>
         </div>
       </div>
     </div>
   </section>
-  <section id="cta">
+  <section id="cta" class="dark:bg-gray-600">
     <div
-      class="container my-[160px]  flex-wrap lg:flex-row lg:flex-nowrap flex items-center justify-center lg:justify-between gap-[203px]">
+      class="container py-[160px] flex-wrap lg:flex-row lg:flex-nowrap flex items-center justify-center lg:justify-between gap-[203px]">
       <div class="relative">
         <img src="img/svg/Group 1.svg" class="absolute bottom-[60px] z-0" alt="" srcset="">
         <img src="img/Placeholder.png" alt="" class="relative z-10" srcset="">
       </div>
       <div class="w-[381px] font-bold lg:items-start items-center lg:text-start text-center flex flex-col gap-[35px]">
         <h1
-          class="text-[40px] before:content-[''] before:absolute before:mt-4 before:w-[94px] before:inline-block before:h-[4px] before:-top-[30px] before:bg-[#E74040] lg:before:-top-[30px] lg:before:left-0 before:left-[52px] relative">
+          class="text-[40px] before:content-[''] before:absolute before:mt-4 before:w-[94px] before:inline-block before:h-[4px] before:-top-[30px] before:bg-[#E74040] lg:before:-top-[30px] lg:before:left-0 before:left-[52px] relative text-title dark:text-gray-100">
           Most Popular Courses
         </h1>
-        <p class="font-normal text-sm leading-[20px]">Problems trying to resolve the conflict between
+        <p class="font-normal text-sm leading-[20px] dark:text-gray-100">Problems trying to resolve the conflict between
           the two major realms of Classical physics:
           Newtonian mechanics </p>
-        <a href="#" class="text-primary flex items-center gap-5">Learn More <span><i
+        <a href="#" class="text-primary flex items-center gap-5 ">Learn More <span><i
               class="fa-solid fa-arrow-right"></i></span></a>
       </div>
     </div>
   </section>
-  <section id="" class="bg-[#EFF8ED]">
+  <section id="" class="bg-[#EFF8ED] dark:bg-gray-700">
     <div
       class="container flex flex-wrap items-center lg:text-start text-center px-10 justify-center lg:justify-start lg:items-start lg:flex-col lg:flex-nowrap py-[112px] gap-[30px]">
       <div class="flex flex-col gap-[10px]">
-        <h3 class="text-primary text-sm">Health Queries</h3>
-        <h1 class="text-title text-[40px] font-bold ">Our Experts Teacher</h1>
-        <p class="w-[450px] text-sm">Problems trying to resolve the conflict between
+        <h3 class="text-primary text-sm ">Health Queries</h3>
+        <h1 class="text-title text-[40px] font-bold dark:text-gray-100">Our Experts Teacher</h1>
+        <p class="w-[450px] text-sm dark:text-gray-100">Problems trying to resolve the conflict between
           the two major realms of Classical physics: Newtonian mechanics</p>
       </div>
       <div class="flex flex-wrap lg:flex-nowrap justify-center items-center gap-[30px]">
@@ -197,33 +195,33 @@
               </div>
             </div>
           </div>
-          <div class="p-5 flex-col gap-2.5 flex w-[241px] bg-white">
+          <div class="p-5 flex-col gap-2.5 flex w-[241px] dark:bg-gray-500 bg-white">
             <div class="flex items-center justify-between">
-              <h1 class="text-primary">Training Courses</h1>
+              <h1 class="text-primary dark:text-[#d4f0c0]">Training Courses</h1>
               <div class="bg-[#2D4059] flex items-center gap-1.5 p-1.5 text-[12px] rounded-xl">
                 <i class="fa-solid fa-star text-[15px] text-yellow-400"></i>
                 <span class=" text-[12px] text-white">4.9</span>
               </div>
             </div>
-            <h1 class="text-base font-bold">Approdable Packages</h1>
-            <p class="font-normal">We focus on ergonomics and meeting you....</p>
-            <div class="flex items-center gap-2.5">
+            <h1 class="text-base font-bold dark:text-gray-100">Approdable Packages</h1>
+            <p class="font-normal dark:text-gray-100">We focus on ergonomics and meeting you....</p>
+            <div class="flex items-center gap-2.5 dark:text-gray-100">
               <i class="fa-solid fa-download"></i>
               <span>15 Sales</span>
             </div>
             <div class="flex items-center font-bold gap-2.5">
-              <span class="text-second">$16.48</span>
-              <span class="text-[#FFAB71]"> $6.48</span>
+              <span class="text-second dark:text-gray-100">$16.48</span>
+              <span class="text-[#FFAB71] "> $6.48</span>
             </div>
             <div class="flex items-center gap-2 text-[12px]">
-              <span class="flex items-center gap-2">
+              <span class="flex items-center gap-2 dark:text-gray-100">
                 <i class="fa-solid fa-clock text-primary"></i>Pro...
               </span>
-              <span class="flex items-center gap-2">
+              <span class="flex items-center gap-2 dark:text-gray-100">
                 <i class="fa-solid fa-clock text-primary"></i>64 Les...
               </span>
-              <span class="flex items-center gap-2">
-                <i class="fa-solid fa-clock text-second"></i>22hr..
+              <span class="flex items-center gap-2 dark:text-gray-100">
+                <i class="fa-solid fa-clock text-second dark:text-gray-100"></i>22hr..
               </span>
             </div>
             <button
@@ -252,33 +250,33 @@
               </div>
             </div>
           </div>
-          <div class="p-5 flex-col gap-2.5 flex w-[241px] bg-white">
+          <div class="p-5 flex-col gap-2.5 flex w-[241px] dark:bg-gray-500 bg-white">
             <div class="flex items-center justify-between">
-              <h1 class="text-primary">Training Courses</h1>
+              <h1 class="text-primary dark:text-[#d4f0c0]">Training Courses</h1>
               <div class="bg-[#2D4059] flex items-center gap-1.5 p-1.5 text-[12px] rounded-xl">
                 <i class="fa-solid fa-star text-[15px] text-yellow-400"></i>
                 <span class=" text-[12px] text-white">4.9</span>
               </div>
             </div>
-            <h1 class="text-base font-bold">Approdable Packages</h1>
-            <p class="font-normal">We focus on ergonomics and meeting you....</p>
-            <div class="flex items-center gap-2.5">
+            <h1 class="text-base font-bold dark:text-gray-100">Approdable Packages</h1>
+            <p class="font-normal dark:text-gray-100">We focus on ergonomics and meeting you....</p>
+            <div class="flex items-center gap-2.5 dark:text-gray-100">
               <i class="fa-solid fa-download"></i>
               <span>15 Sales</span>
             </div>
             <div class="flex items-center font-bold gap-2.5">
-              <span class="text-second">$16.48</span>
+              <span class="text-second dark:text-gray-100">$16.48</span>
               <span class="text-[#FFAB71]"> $6.48</span>
             </div>
             <div class="flex items-center gap-2 text-[12px]">
-              <span class="flex items-center gap-2">
+              <span class="flex items-center gap-2 dark:text-gray-100">
                 <i class="fa-solid fa-clock text-primary"></i>Pro...
               </span>
-              <span class="flex items-center gap-2">
+              <span class="flex items-center gap-2 dark:text-gray-100">
                 <i class="fa-solid fa-clock text-primary"></i>64 Les...
               </span>
-              <span class="flex items-center gap-2">
-                <i class="fa-solid fa-clock text-second"></i>22hr..
+              <span class="flex items-center gap-2 dark:text-gray-100">
+                <i class="fa-solid fa-clock text-second dark:text-gray-100"></i>22hr..
               </span>
             </div>
             <button
@@ -307,33 +305,33 @@
               </div>
             </div>
           </div>
-          <div class="p-5 flex-col gap-2.5 flex w-[241px] bg-white">
+          <div class="p-5 flex-col gap-2.5 flex w-[241px] dark:bg-gray-500 bg-white">
             <div class="flex items-center justify-between">
-              <h1 class="text-primary">Training Courses</h1>
+              <h1 class="text-primary dark:text-[#d4f0c0]">Training Courses</h1>
               <div class="bg-[#2D4059] flex items-center gap-1.5 p-1.5 text-[12px] rounded-xl">
                 <i class="fa-solid fa-star text-[15px] text-yellow-400"></i>
                 <span class=" text-[12px] text-white">4.9</span>
               </div>
             </div>
-            <h1 class="text-base font-bold">Approdable Packages</h1>
-            <p class="font-normal">We focus on ergonomics and meeting you....</p>
+            <h1 class="text-base font-bold dark:text-gray-100">Approdable Packages</h1>
+            <p class="font-normal dark:text-gray-100">We focus on ergonomics and meeting you....</p>
             <div class="flex items-center gap-2.5">
               <i class="fa-solid fa-download"></i>
               <span>15 Sales</span>
             </div>
             <div class="flex items-center font-bold gap-2.5">
-              <span class="text-second">$16.48</span>
+              <span class="text-second dark:text-gray-100">$16.48</span>
               <span class="text-[#FFAB71]"> $6.48</span>
             </div>
             <div class="flex items-center gap-2 text-[12px]">
-              <span class="flex items-center gap-2">
+              <span class="flex items-center gap-2 dark:text-gray-100">
                 <i class="fa-solid fa-clock text-primary"></i>Pro...
               </span>
-              <span class="flex items-center gap-2">
+              <span class="flex items-center gap-2 dark:text-gray-100">
                 <i class="fa-solid fa-clock text-primary"></i>64 Les...
               </span>
-              <span class="flex items-center gap-2">
-                <i class="fa-solid fa-clock text-second"></i>22hr..
+              <span class="flex items-center gap-2 dark:text-gray-100">
+                <i class="fa-solid fa-clock text-second dark:text-gray-100"></i>22hr..
               </span>
             </div>
             <button
@@ -362,33 +360,33 @@
               </div>
             </div>
           </div>
-          <div class="p-5 flex-col gap-2.5 flex w-[241px] bg-white">
+          <div class="p-5 flex-col gap-2.5 flex w-[241px] dark:bg-gray-500 bg-white">
             <div class="flex items-center justify-between">
-              <h1 class="text-primary">Training Courses</h1>
+              <h1 class="text-primary dark:text-[#d4f0c0]">Training Courses</h1>
               <div class="bg-[#2D4059] flex items-center gap-1.5 p-1.5 text-[12px] rounded-xl">
                 <i class="fa-solid fa-star text-[15px] text-yellow-400"></i>
                 <span class=" text-[12px] text-white">4.9</span>
               </div>
             </div>
-            <h1 class="text-base font-bold">Approdable Packages</h1>
-            <p class="font-normal">We focus on ergonomics and meeting you....</p>
-            <div class="flex items-center gap-2.5">
+            <h1 class="text-base font-bold dark:text-gray-100">Approdable Packages</h1>
+            <p class="font-normal dark:text-gray-100">We focus on ergonomics and meeting you....</p>
+            <div class="flex items-center gap-2.5 dark:text-gray-100">
               <i class="fa-solid fa-download"></i>
               <span>15 Sales</span>
             </div>
             <div class="flex items-center font-bold gap-2.5">
-              <span class="text-second">$16.48</span>
-              <span class="text-[#FFAB71]"> $6.48</span>
+              <span class="text-second dark:text-gray-100">$16.48</span>
+              <span class="text-[#FFAB71] "> $6.48</span>
             </div>
             <div class="flex items-center gap-2 text-[12px]">
-              <span class="flex items-center gap-2">
+              <span class="flex items-center gap-2 dark:text-gray-100">
                 <i class="fa-solid fa-clock text-primary"></i>Pro...
               </span>
-              <span class="flex items-center gap-2">
+              <span class="flex items-center gap-2 dark:text-gray-100">
                 <i class="fa-solid fa-clock text-primary"></i>64 Les...
               </span>
-              <span class="flex items-center gap-2">
-                <i class="fa-solid fa-clock text-second"></i>22hr..
+              <span class="flex items-center gap-2 dark:text-gray-100">
+                <i class="fa-solid fa-clock text-second dark:text-gray-100"></i>22hr..
               </span>
             </div>
             <button
@@ -399,31 +397,32 @@
       </div>
     </div>
   </section>
-  <section id="" class="my-[160px]">
-    <div class="container flex flex-col flex-wrap lg:flex-nowrap items-center lg:items-start gap-[80px]">
+  <section id="" class="bg-white dark:bg-gray-600">
+    <div class="container py-[160px] flex flex-col flex-wrap lg:flex-nowrap items-center lg:items-start gap-[80px]">
       <div class="font-bold flex gap-2.5 flex-col text-center lg:text-start">
-        <h3 class="text-primary ">Practice Advice</h3>
-        <h1 class=" text-title text-[40px]">Get Quality Education</h1>
-        <p class="w-[463px] font-normal">Problems trying to resolve the conflict between the two major realms of
+        <h3 class="text-primary">Practice Advice</h3>
+        <h1 class=" text-title text-[40px] dark:text-gray-100">Get Quality Education</h1>
+        <p class="w-[463px] font-normal dark:text-gray-100">Problems trying to resolve the conflict between the two
+          major realms of
           Classical physics: Newtonian mechanics
         </p>
       </div>
       <div class="flex items-center flex-wrap justify-center lg:flex-row lg:flex-nowrap gap-5">
-        <div class="shadow-xl flex flex-col gap-[35px] p-[40px]">
+        <div class="shadow-xl flex flex-col gap-[35px] p-[40px] dark:bg-gray-400/50">
           <span class="w-[96px] h-[96px] bg-primary rounded-full flex items-center justify-center"><i
               class="fa-solid fa-heart text-[40px] text-white"></i></span>
           <h1 class="text-[24px] font-bold text-primary">FREE</h1>
-          <p class="text-sm tracking-[.2px] text-second">Organize across all apps by
+          <p class="text-sm tracking-[.2px] text-second dark:text-gray-100">Organize across all apps by
             hand</p>
           <div class="">
             <h1 class="text-[40px] font-bold text-primary">19$</h1>
             <span class="text-[#8EC2F2]">Per Month</span>
           </div>
-          <div class="text-[14px] text-second">
+          <div class="text-[14px] text-second dark:text-gray-100">
             Slate helps you see how many more days you need...
           </div>
           <button class="bg-primary text-white rounded-md p-[15px]">Try for free</button>
-          <ul class="flex flex-col gap-5">
+          <ul class="flex flex-col gap-5 dark:text-gray-100">
             <li class="flex items-center text-[14px]"><span
                 class="bg-[#2DC071] mr-2 flex items-center justify-center w-[32px] h-[32px] rounded-full">
                 <i class="text-white fa-solid fa-check"></i></span> Unlimited
@@ -450,23 +449,23 @@
             </li>
           </ul>
         </div>
-        <div class="shadow-xl flex flex-col gap-[35px] p-[40px] relative">
+        <div class="shadow-xl flex flex-col gap-[35px] p-[40px] relative dark:bg-gray-400/50">
           <span
             class="bg-[#E77C40] absolute top-0 right-0 w-[89px] h-[89px] flex items-center justify-center text-white rounded-full">New</span>
           <span class="w-[96px] h-[96px] bg-primary rounded-full flex items-center justify-center"><i
               class="fa-solid fa-heart text-[40px] text-white"></i></span>
           <h1 class="text-[24px] font-bold text-primary">FREE</h1>
-          <p class="text-sm tracking-[.2px] text-second">Organize across all apps by
+          <p class="text-sm tracking-[.2px] text-second dark:text-gray-100">Organize across all apps by
             hand</p>
           <div class="">
             <h1 class="text-[40px] font-bold text-primary">19$</h1>
             <span class="text-[#8EC2F2]">Per Month</span>
           </div>
-          <div class="text-[14px] text-second">
+          <div class="text-[14px] text-second dark:text-gray-100">
             Slate helps you see how many more days you need...
           </div>
           <button class="bg-primary text-white rounded-md p-[15px]">Try for free</button>
-          <ul class="flex flex-col gap-5">
+          <ul class="flex flex-col gap-5 dark:text-gray-100">
             <li class="flex items-center text-[14px]"><span
                 class="bg-[#2DC071] mr-2 flex items-center justify-center w-[32px] h-[32px] rounded-full">
                 <i class="text-white fa-solid fa-check"></i></span> Unlimited
@@ -493,21 +492,21 @@
             </li>
           </ul>
         </div>
-        <div class="shadow-xl flex flex-col gap-[35px] p-[40px]">
+        <div class="shadow-xl flex flex-col gap-[35px] p-[40px] dark:bg-gray-400/50">
           <span class="w-[96px] h-[96px] bg-primary rounded-full flex items-center justify-center"><i
               class="fa-solid fa-heart text-[40px] text-white"></i></span>
           <h1 class="text-[24px] font-bold text-primary">FREE</h1>
-          <p class="text-sm tracking-[.2px] text-second">Organize across all apps by
+          <p class="text-sm tracking-[.2px] text-second dark:text-gray-100">Organize across all apps by
             hand</p>
           <div class="">
             <h1 class="text-[40px] font-bold text-primary">19$</h1>
             <span class="text-[#8EC2F2]">Per Month</span>
           </div>
-          <div class="text-[14px] text-second">
+          <div class="text-[14px] text-second dark:text-gray-100">
             Slate helps you see how many more days you need...
           </div>
           <button class="bg-primary text-white rounded-md p-[15px]">Try for free</button>
-          <ul class="flex flex-col gap-5">
+          <ul class="flex flex-col gap-5 dark:text-gray-100">
             <li class="flex items-center text-[14px]"><span
                 class="bg-[#2DC071] mr-2 flex items-center justify-center w-[32px] h-[32px] rounded-full">
                 <i class="text-white fa-solid fa-check"></i></span> Unlimited
@@ -537,12 +536,12 @@
       </div>
     </div>
   </section>
-  <section id="testimoni">
-    <div class="container my-[160px] flex flex-col gap-[96px]">
+  <section id="testimoni" class="dark:bg-gray-600">
+    <div class="container py-[160px] flex flex-col gap-[96px]">
       <div class="font-bold flex flex-col items-center text-center lg:text-start lg:items-start">
         <h3 class="text-primary ">Testimonial</h3>
-        <h1 class="text-title text-[40px]">Get Quality Education</h1>
-        <p class="w-[463px] font-normal text-sm">Problems trying to resolve the conflict between
+        <h1 class="text-title text-[40px] dark:text-gray-100">Get Quality Education</h1>
+        <p class="w-[463px] font-normal text-sm dark:text-gray-100">Problems trying to resolve the conflict between
           the two major realms of Classical physics: Newtonian mechanics </p>
       </div>
       <div
@@ -550,7 +549,8 @@
         <div class="flex w-[508px] items-center justify-center flex-col gap-[30px]">
           <img class="rounded-full" src="img/frame.png" alt="">
           <div class="flex flex-col font-bold items-center gap-[16px] text-center">
-            <p class="font-normal w-[311px]">Slate helps you see how many more days you need to work to reach your
+            <p class="font-normal w-[311px] dark:text-gray-100">Slate helps you see how many more days you need to work
+              to reach your
               financial goal
               for the month and
               year.</p>
@@ -561,14 +561,15 @@
               <i class="fa-solid fa-star"></i>
               <i class="fa-regular fa-star"></i>
             </div>
-            <h1 class="text-base text-title">Regina Miles</h1>
-            <h3 class="text-sm text-second">Designer</h3>
+            <h1 class="text-base text-title dark:text-gray-100">Regina Miles</h1>
+            <h3 class="text-sm text-second dark:text-gray-200">Designer</h3>
           </div>
         </div>
         <div class="flex w-[508px] items-center justify-center flex-col gap-[30px]">
           <img class="rounded-full" src="img/testimonial-user-cover-2.png" alt="">
           <div class="flex flex-col font-bold items-center gap-[16px] text-center">
-            <p class="font-normal w-[311px]">Slate helps you see how many more days you need to work to reach your
+            <p class="font-normal w-[311px] dark:text-gray-100">Slate helps you see how many more days you need to work
+              to reach your
               financial goal
               for the month and
               year.</p>
@@ -579,19 +580,19 @@
               <i class="fa-solid fa-star"></i>
               <i class="fa-regular fa-star"></i>
             </div>
-            <h1 class="text-base text-title">Regina Miles</h1>
-            <h3 class="text-sm text-second">Designer</h3>
+            <h1 class="text-base text-title dark:text-gray-100">Regina Miles</h1>
+            <h3 class="text-sm text-second dark:text-gray-200">Designer</h3>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section id="contact">
-    <div class="container my-[160px] px-5 lg:px-0 flex items-center flex-col gap-20">
+  <section id="contact" class="dark:bg-gray-600">
+    <div class="container py-[160px] px-5 lg:px-0 flex items-center flex-col gap-20">
       <div class="flex items-center flex-col gap-2.5 text-center font-bold">
         <h3 class="text-sm text-primary">Newsletter</h3>
-        <h1 class="text-[40px] text-title ">Our Experts Teacher</h1>
-        <p class="font-normal text-sm w-[463px]">Problems trying to resolve the conflict between
+        <h1 class="text-[40px] text-title dark:text-gray-100">Our Experts Teacher</h1>
+        <p class="font-normal text-sm w-[463px] dark:text-gray-100">Problems trying to resolve the conflict between
           the two major realms of Classical physics: Newtonian mechanics </p>
       </div>
       <div class="relative w-full flex items-center justify-center ">
@@ -603,39 +604,39 @@
       </div>
     </div>
   </section>
-  <section id="footer-1">
+  <section id="footer-1" class="dark:bg-gray-600">
     <div
-      class="container flex items-center gap-[30px] px-5 lg:px-0 flex-wrap lg:flex-row lg:flex-nowrap font-bold mt-[160px] mb-[52px]">
+      class="container flex items-center gap-[30px] px-5 lg:px-0 flex-wrap lg:flex-row lg:flex-nowrap font-bold pt-[160px] pb-[52px]">
       <div class="flex flex-col gap-5 w-[148px]">
-        <h1 class="text-title">Company Info</h1>
-        <ul class="flex flex-col gap-2.5 text-second">
+        <h1 class="text-title dark:text-gray-300">Company Info</h1>
+        <ul class="flex flex-col gap-2.5 text-second dark:text-gray-100">
           <li class="">About Us</li>
           <li class="">Carrier</li>
           <li class="">We are hiring</li>
           <li class="">Blog</li>
         </ul>
       </div>
-      <div class="flex flex-col gap-5 w-[148px]">
-        <h1 class="text-title">Legal</h1>
-        <ul class="flex flex-col gap-2.5 text-second">
+      <div class="flex flex-col gap-5 w-[148px] dark:text-gray-100">
+        <h1 class="text-title dark:text-gray-300">Legal</h1>
+        <ul class="flex flex-col gap-2.5 text-second dark:text-gray-100">
           <li class="">About Us</li>
           <li class="">Carrier</li>
           <li class="">We are hiring</li>
           <li class="">Blog</li>
         </ul>
       </div>
-      <div class="flex flex-col gap-5 w-[148px]">
-        <h1 class="text-title">Features</h1>
-        <ul class="flex flex-col gap-2.5 text-second">
+      <div class="flex flex-col gap-5 w-[148px] dark:text-gray-100">
+        <h1 class="text-title dark:text-gray-300">Features</h1>
+        <ul class="flex flex-col gap-2.5 text-second dark:text-gray-100">
           <li class="">About Us</li>
           <li class="">Carrier</li>
           <li class="">We are hiring</li>
           <li class="">Blog</li>
         </ul>
       </div>
-      <div class="flex flex-col gap-5 w-[148px]">
-        <h1 class="text-title">Resources</h1>
-        <ul class="flex flex-col gap-2.5 text-second">
+      <div class="flex flex-col gap-5 w-[148px] ">
+        <h1 class="text-title dark:text-gray-300">Resources</h1>
+        <ul class="flex flex-col gap-2.5 text-second dark:text-gray-100">
           <li class="">About Us</li>
           <li class="">Carrier</li>
           <li class="">We are hiring</li>
@@ -643,43 +644,40 @@
         </ul>
       </div>
       <div class="flex flex-col gap-5 w-[321px]">
-        <h1 class="text-title">Get In Touch</h1>
+        <h1 class="text-title dark:text-gray-300">Get In Touch</h1>
         <div class="flex gap-10">
           <i class="text-primary fa-solid fa-phone"></i>
-          <h3 class="text-second">(480) 555 - 0103</h3>
+          <h3 class="text-second dark:text-gray-100">(480) 555 - 0103</h3>
         </div>
         <div class="flex gap-10">
           <i class="text-primary fa-solid fa-location-dot"></i>
-          <h3 class="text-second">4517 Washington Ave. Manchester,
+          <h3 class="text-second dark:text-gray-100">4517 Washington Ave. Manchester,
             Kentucky 39495</h3>
         </div>
         <div class="flex gap-10">
           <i class="text-primary fa-solid fa-envelope"></i>
-          <h3 class="text-second">debra.holt@example.com</h3>
+          <h3 class="text-second dark:text-gray-100">debra.holt@example.com</h3>
         </div>
       </div>
     </div>
   </section>
-  <footer class="bg-[#FAFAFA]">
+  <footer class="bg-[#FAFAFA] dark:bg-gray-700">
     <div class="container flex flex-col lg:flex-row py-[25px] items-center justify-between">
-      <h1 class="text-second font-bold">Made With Love By Figmaland All Right Reserved </h1>
-      <div class="flex gap-5 text-[24px] text-primary">
+      <h1 class="text-second font-bold dark:text-gray-100">Made With Love By Figmaland All Right Reserved </h1>
+      <div class="flex gap-5 text-[24px] text-primary ">
         <i class="fa-brands fa-facebook"></i>
         <i class="fa-brands fa-instagram"></i>
         <i class="fa-brands fa-twitter"></i>
       </div>
     </div>
   </footer>
-  <script>
-    themeButton = document.getElementById("themeButton")
-    darkIcon = document.getElementById("#darkIcon")
-    lightIcon = document.getElementById("#lightIcon")
-
-    themeButton.addEventListener("click", {
-
-    })
-    if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-theme: dark)").matches)) { document.documentElement.classList.add("dark") } else { document.documentElement.classList.remove("dark") } 
-  </script>
+  <div class="fixed bottom-5 right-10 w-5 z-50">
+    <button id="themeButton" class="p-1.5 focus:ring focus:ring-gray-700 rounded-lg">
+      <i id="darkIcon" class="fa-solid fa-moon text-[30px] hidden text-sky-300"></i>
+      <i id="lightIcon" class="fa-solid fa-sun text-[30px] text-yellow-500"></i>
+    </button>
+  </div>
+  <script src="script.js"></script>
 </body>
 
 </html>
